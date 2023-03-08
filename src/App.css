@@ -1,0 +1,419 @@
+.App-- {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+:root {
+  --gray: grey;
+  --black: #000;
+  --white: #fff;
+  --green: #91f600;
+
+ 
+  --body-background: #fff;
+  --hover-color: grey;
+  --header-background: #000;
+  --anchor-color: #fff;
+  --heading-color: #b2b2b2;
+  --paragraph-color: #b2b2b2;
+  --anchor-active-color: #91f600;
+}  
+
+.green {
+  color: var(--green);
+}
+
+.white {
+  color: var(--white);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--body-background);
+  font-family: 'Raleway';
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.active {
+  color: var(--anchor-active-color);
+  font-weight: var(--anchor-active-font-weight);
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+header {
+  display: flex;
+  background-color: var(--header-background);
+  padding-top: 18px;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.section {
+  flex-grow: 1;
+}
+
+.section.logo {
+  margin-left: 2.5em;
+}
+
+.logo {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 500px;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  flex-grow: 1;
+  text-align: center;
+  width: 70px;
+}
+
+ul li a {
+  color: var(--anchor-color);
+  font-size: .9rem;
+  text-transform: uppercase;
+}
+
+header div:nth-child(1) {
+  flex-grow: 8;
+  padding-bottom: 15px;
+}
+
+header div:nth-child(1) img {
+  margin-left: 25px;
+}
+
+.box-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media all and (max-width: 800px) {
+  header {
+      justify-content: space-around;
+  }
+
+  .container {
+      padding: 50px;
+  }
+}
+
+@media only screen and (max-width:542px) {
+  header div:nth-child(1) {
+      margin: 0 auto;
+      display: block;
+      padding-bottom: 0;
+  }
+
+  header {
+      flex-direction: column;
+  }
+
+  .section {
+      flex-grow: 1;
+      text-align: center;
+  }
+
+  .section.logo {
+      margin: 0;
+  }
+
+  ul {
+      background-color: #232323;
+      width: 100%;
+      margin-top: 15px;
+  }
+
+  ul li {
+      width: 50%;
+      padding: 5px;
+  }
+}
+
+.newone{
+  text-align: center;
+  /* margin-top: 20px; */
+  color: rgb(226, 246, 10);
+}
+
+.newtwo{
+  padding:px;
+  
+}
+
+
+.App {
+  width: 150%;
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+table {
+  border: 4px solid forestgreen;
+  width: 800px;
+  height: 200px;
+  margin-left: 200px;
+  margin-top: 50px;
+  padding: 15px;
+ 
+}
+  
+th {
+  border-bottom: 3px solid black;
+  
+}
+  
+td {
+  text-align: center;
+  border-left: #61dafb;
+  padding-block-start:10px;
+  padding-inline-end: 50px;
+}
+
+
+
+.table{
+  background-color:grey ;
+  opacity: 6;
+ width: 850px;
+ margin-right: 500px ;
+
+}
+th{
+  height: 100px;
+}
+
+/* .newthree{
+  margin-left: 500px;
+} */
+.backimg{
+  background-image: url('./mohammad-alizade-XgeZu2jBaVI-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 190vh;
+  background-attachment: fixed;
+}
+
+.newimage{
+
+  background-image: url("./pexels-chan-walrus-941861.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150vh;
+  text-align: center;
+  color: #52de4d;
+  background-attachment: fixed;
+  font-size: 60px;
+ 
+}
+.newpa{
+  min-height: 100vh;
+  background-image: url("./wallpaperflare.com_wallpaper\ \(2\).jpg  ");
+  height: 260vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-attachment: fixed;
+  
+  
+ 
+}
+
+.name{
+ font-size: 25px;
+ padding: 100px;
+ padding-top: 10px;
+}
+.About{
+  text-align: center;
+  /* margin-top: 10px; */
+  color: #f8feff;
+}
+.contain{
+  
+  border-style:solid;
+  margin-top: 50px;
+  margin-left:20px;
+  margin-right: 500px;
+  border-radius: 5px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-color: #91f600;
+  color: #61dafb;
+}
+.start{
+  
+  border-style:solid;
+  margin-top: 50px;
+  margin-left:500px;
+  margin-right: 50px;
+  border-radius: 5px;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-color: #91f600;
+  color: #61dafb;
+  font-size: 25px;
+}
+.point{
+  margin-left: 50px;
+  font-size: 25px;
+}
+
+.cont{
+  background-image: url("./wallpaperflare.com_wallpaper\ \(2\).jpg");
+  height: 120vh;
+ background-attachment: fixed;
+  
+  padding-top: 20px;
+  border-radius: 10px;
+  text-align: center;
+ 
+
+}
+
+.navi{
+  background:fixed;
+}
+
+.MuiContainer-root cont MuiContainer-maxWidthLg{
+  border-style: solid;
+  border-radius: 40px;
+}
+.pap{
+  border-style: solid;
+  border-color: rgb(248, 2, 2);
+  background-color: #dbe617;
+  opacity: 0.9;
+}
+
+.MuiButton-label{
+  text-align: right;
+}
+
+.one{
+  font-size: 25px;
+  font-family: comic sans-serif;
+}
+
+.form{
+  
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 10px;
+ 
+
+  
+}
+.newform{
+  background-image: url('./mohammad-alizade-XgeZu2jBaVI-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border-style: solid;
+  
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-left: 350px;
+  margin-right: 350px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  padding-top: -40px;
+border-color: #d4ff00;
+
+}
+.loc{
+  margin-left: 10px;
+  font-size: 20px;
+}
+.put{
+margin-right: 50px;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  background-color: #d69a9a;
+  text-align: inherit;
+}
+
+
+.mit{
+  padding: 10px;
+  font-size: 20px;
+  background-color: crimson;
+  border-radius: 10px;
+}
+
+
+.pos{
+  color: #91d7ea;
+}
+
+.me{
+  padding-right: 50px;
+}
+.to{
+  padding-right:10px ;
+}
+.too{
+  padding-top: -10px;
+  padding-right: 40px;
+}
+
